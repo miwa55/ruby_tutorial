@@ -1,0 +1,7 @@
+begin
+  result = 10 / 0
+rescue ZeroDivisionError
+  puts "0で割ることはできません！"
+ensure
+  puts "処理を終了します"
+end
