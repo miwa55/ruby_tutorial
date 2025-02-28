@@ -1,0 +1,12 @@
+name = "ruby"
+age = 25
+height = 160.5
+is_student = false
+
+puts "name: #{name}, age: #{age}, height: #{height}cm, are you student?#{is_student}"
+
+# 型の確認
+puts name.class   # String
+puts age.class    # Integer
+puts height.class # Float
+puts is_student.class # FalseClass
