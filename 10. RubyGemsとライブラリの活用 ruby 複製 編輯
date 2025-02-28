@@ -1,0 +1,8 @@
+require 'json'
+
+data = { name: "美和", age: 25, city: "東京" }
+json_string = JSON.generate(data)
+puts "JSONデータ: #{json_string}"
+
+parsed_data = JSON.parse(json_string)
+puts "名前: #{parsed_data['name']}, 年齢: #{parsed_data['age']}"
