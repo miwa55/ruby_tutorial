@@ -1,0 +1,76 @@
+
+# if文
+age = 20
+if age >= 20
+  puts "成人です"
+else
+  puts "未成年です"
+end
+
+# case文
+day = "Monday"
+case day
+when "Monday"
+  puts "今日は月曜日です"
+when "Tuesday"
+  puts "今日は火曜日です"
+else
+  puts "不明な日です"
+end
+
+# 繰り返し処理
+5.times { |i| puts "カウント: #{i + 1}" }
+
+# while文
+count = 1
+while count <= 5
+  puts "while: #{count} 回目"
+  count += 1
+end
+
+# until文
+count = 1
+until count > 5
+  puts "until: #{count} 回目"
+  count += 1
+end
+
+# for文
+for i in 1..5
+  puts "for: #{i} 回目"
+end
+
+# 配列をeachでループ
+fruits = ["りんご", "みかん", "ぶどう"]
+fruits.each do |fruit|
+  puts "each: #{fruit}"
+end
+
+# loop文
+i = 1
+loop do
+  puts "loop: #{i} 回目"
+  i += 1
+  break if i > 5  # 条件を満たしたら抜ける
+end
+
+# mapを使って新しい配列を作成
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = numbers.map { |n| n * n }
+puts "map: #{squared_numbers}"  # => [1, 4, 9, 16, 25]
+
+# selectを使って偶数のみ取得
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = numbers.select { |n| n.even? }
+puts "select: #{even_numbers}"  # => [2, 4, 6]
+
+# 配列の合計を求める
+numbers = [1, 2, 3, 4, 5]
+sum = numbers.reduce(0) { |total, n| total + n }
+puts "reduce: #{sum}"  # => 15
+
+# インデックス付きでループ
+fruits = ["りんご", "みかん", "ぶどう"]
+fruits.each_with_index do |fruit, index|
+  puts "each_with_index: #{index + 1} 番目は #{fruit}"
+end
