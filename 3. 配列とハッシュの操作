@@ -1,0 +1,9 @@
+# 配列の操作
+fruits = ["りんご", "みかん", "ぶどう"]
+fruits << "バナナ" # 配列に追加
+puts fruits.join(", ")
+
+# ハッシュの操作
+user = { name: "ルビー", age: 25, job: "エンジニア" }
+user[:location] = "東京" # 新しいキー追加
+puts "名前: #{user[:name]}, 仕事: #{user[:job]}, 場所: #{user[:location]}"
