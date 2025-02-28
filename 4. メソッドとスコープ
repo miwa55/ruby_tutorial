@@ -1,0 +1,19 @@
+# メソッドの定義
+def greet(name)
+  "こんにちは、#{name}さん！"
+end
+
+puts greet("美和")
+
+# スコープ
+def outer_method
+  x = 10
+  def inner_method
+    y = 20
+    puts "内側のメソッドで定義: #{y}"
+  end
+  inner_method
+  puts "外側のメソッドで定義: #{x}"
+end
+
+outer_method
