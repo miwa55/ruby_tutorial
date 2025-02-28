@@ -1,0 +1,6 @@
+class DynamicClass
+  define_method(:hello) { puts "メタプログラミングで作成したメソッドです" }
+end
+
+obj = DynamicClass.new
+obj.hello
