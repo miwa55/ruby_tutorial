@@ -1,0 +1,9 @@
+# ファイルに書き込み
+File.open("test.txt", "w") do |file|
+  file.puts "Hello, World!"
+end
+
+# ファイルを読み込む
+File.open("test.txt", "r") do |file|
+  puts file.read
+end
