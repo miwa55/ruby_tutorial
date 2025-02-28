@@ -1,0 +1,12 @@
+module Greeting
+  def say_hello
+    puts "こんにちは！"
+  end
+end
+
+class Person
+  include Greeting
+end
+
+person = Person.new
+person.say_hello
